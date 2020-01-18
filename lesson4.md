@@ -1,0 +1,5 @@
+- urlopen的返回对象
+    - 案例v3
+    - geturl：返回请求对象的url
+    - info：请求返回对象的meta信息
+    - getcode：返回http code
