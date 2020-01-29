@@ -1,5 +1,15 @@
 - request.date 的使用
     - 访问网络的两种方法
         - get
+            - 利用参数给服务器传递信息
+            - 参数为dict，然后用parse编码
         - post
-        - 案例v4
+            - 一般向服务器传递参数使用
+            - post是把信息自动加密处理
+            - 我们如果想使用post信息，需要用到data参数
+            - 使用post，意味着http的请求头可能需要更改
+                - Content-Type：application/x-ww.form-urlencode
+                - Content-Length：数据长度
+                - 简而言之，一旦更改请求方法，请注意其他请求头部信息相适应
+            - urllib.parse.urlencode可以将字符串自动转换成上面的
+        - 案例v4、v5
