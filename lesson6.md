@@ -1,0 +1,14 @@
+- urllib.error
+    - URLError产生的原因：
+        - 没网
+        - 服务器链接失败
+        - 找不到指定服务器
+        - 是OSError的子类
+        - 案例v7
+    - HTTPError, 是URLError的一个子类
+        - 案例v8
+
+    - 两者区别：
+        - HTTPError是对应的HTTP请求的返回码错误，如果返回错误码是400以上的，则引发HTTPError
+        - URLError对应的一般是网络出现问题，包括url问题
+        - 关系区别：OSError-URLError-HTTPError
