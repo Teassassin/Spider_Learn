@@ -1,0 +1,12 @@
+- ProxyHandler处理（代理服务器）
+    - 使用代理IP，是爬虫的常用手段
+    - 获取代理服务器的地址
+        - www.xicidaili.com
+        - www.goubanjia.com
+    - 代理用来隐藏真实访问中，代理也不允许频繁访问某一个固定网站，所以，代理一定要很多很多
+    - 基本使用步骤：
+        1. 设置代理地址
+        2. 创建ProxyHandler
+        3. 创建Opener
+        4. 安装Opener
+    - 案例v10
